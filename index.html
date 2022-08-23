@@ -1,47 +1,112 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-    <title>The Amazing Site</title>
+        <title>Matt's Amazing Website</title>
+        <style>
+            body {
+                background: rgb(255, 0, 0);
+                color: rgb(0, 0, 255);
+                padding: 10px;
+                font-family: arial;
+            }
+            #all-contents {
+              max-width: 800px;
+                margin: auto;
+            }
+         
+            /* navigation menu */
+            nav {
+                background: rgb(247, 0, 223);
+               margin: 0 auto;
+               margin-bottom: 20px;
+                display: flex;
+                padding: 10px;
+            }
+            h1 {
+                display: flex;
+                align-items: center;
+                color: rgb(0, 0, 0);
+                flex: 1;
+                margin: 0;
+            }
+            #nav-ul {
+                list-style-image: none;
+            }
+            .nav-li {
+                display: inline-block;
+                padding: 0 10px;
+            }
+            a {
+                text-decoration: none;
+                color: rgb(255, 255, 255);
+                border: 3px solid black
+            }
+         
+            /* main container area beneath menu */
+            main {
+                background: rgb(0, 255, 55)));
+                display: flex;
+                border: 5px solid black;
+            }
+            .sidebar {
+                margin-right: 25px;
+                padding: 10px;
+            }
+            .sidebar-img {
+                width: 200px;
+                border: 5px solid rgb(255, 0, 212);
+            }
+            .content {
+                flex: 1;
+                padding: 15px;
+            }
+            #interests {
+                border: 4px rgb(255, 255, 255) ridge;
+                padding: 8px;
+            }
+            h2, h3 {
+                margin: 0px;
+            }
+         </style>
     </head>
     
     <body>
-        <body>
-        <!-- Visible HTML elements GO HERE  -->
-        <div>
-         <nav>
-            <h1>Matt's Website</h1>
-            <ul>
-                <li>
-                    <a href="index.html"> Home </a>
-                </li>
-                <li>
-                    <a href="portfolio.html"> Portfolio </a>
-                </li>
-            </ul>
-         </nav>
+        <!-- Visible HTML elements GO HERE -->
+        <!-- All content go here -->
+        <div id="all-content">
+            <nav>
+                <h1>Matt's Glorious Website</h1>
+                <ul id="nav-ul">
+                    <li class="nav-li">
+                      <a href="index.html"> Home </a>
+                    </li>
+                    <li class="nav-li">
+                      <a href="portfolio.html"> Portfolio </a>
+                    </li>
+                </ul>
+            </nav>
 
             <main>
-                <!-- Sidebar section -->
-                <div>
-                <img src="httphttp://prodimage.images-bn.com/pimages/0778988409848_p0_v1_s1200x630.jpg">
-                <h2>Mattg Zeringue</h2>
-                <p>I like solving rubiks cubes </p>
+                <!-- Sidebar Section -->
+                <div class="sidebar">
+                <img class="sidebar-img" src="https://publicdomainvectors.org/tn_img/unicorn-color-publicdomain.webp">
                 </div>
-            
-                <!-- Content section -->
-                <div>
-                    <h2></h2>
-                    <p></p>
-                    <!-- Interests section -->
-                    <div>
-                        <h3>Interests</h3>
-                        <ul>
-                            <li>Solving Rubiks Cube</li>
-                            <li>I like dogs</li>
-                            <li>I like hanging with friends</li>
-                        </ul>
+
+                <!-- Content Section -->
+                <div class="content">
+                    <h2>Matt Zeringue</h2>
+                    <p>Matt at Hahnville High</p>
+                    <!-- Interest Section -->
+                    <div id="interests">
+                        <h3>Interest</h3>
+                    </div>
+                    <ul>
+                        <li>Solving Rubiks Cubes</li>
+                        <li>I Like Dogs</li>
+                        <li>Hanging with friends</li>
+                    </ul>
                 </div>
             </main>
         </div>
-    </body>
+     </body>
 </html>
