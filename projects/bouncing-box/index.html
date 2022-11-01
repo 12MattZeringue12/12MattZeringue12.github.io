@@ -74,21 +74,21 @@
 			turn it around! 
 			*/
 		  /* Your Code to Increase positionX by 10 HERE*/
-			
-
 
 
 			function update() {
 				/*change position by 10*/
-				positionX = positionX + 10;
+				positionX = positionX + speed;
 				moveBoxTo(positionX)
 				if(positionX > boardWidth){
 					// Change Direction of Box
+					speed = speed * -1
 				}
 				if(positionX < 0){
 					// Change speed to positive
+					speed = speed * -1
 				}
-			};
+			}
 
 			/* 
 			This Function will be called each time the box is clicked. Each time it is called,
@@ -97,9 +97,8 @@
 			*/
 			function handleBoxClick() {
 				positionX = 0;
-			// your code to increase the points by 1
-				changeBoxText(1);
-				speed = speed * -1;
+				points = points + 1
+				changeBoxText(points);
 			}
 		})();
 	</script>
