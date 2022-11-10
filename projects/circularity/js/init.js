@@ -27,17 +27,17 @@ var init = function (window) {
         function drawCircle(){
              // Code to draw a circle
             circle = draw.randomCircleInArea(canvas, true, true, '#999', 2);
-            physikz.addRandomVelocity(circle, canvas, 30, 30);
+            physikz.addRandomVelocity(circle, canvas, 10, 10);
             view.addChild(circle);
             circles.push(circle);
         }
 
         // TODO 3 / 7 : Call the drawCircle() function 
-        drawCircle(myArray[i]);
-        drawCircle(myArray[i]);
-        drawCircle(myArray[i]);
-        drawCircle(myArray[i]);
-        drawCircle(myArray[i]);
+        drawCircle();
+        drawCircle();
+        drawCircle();
+        drawCircle();
+        drawCircle();
 
         ////////////////////////////////////////////////////////////
         ///////////////// PROGRAM LOGIC ////////////////////////////
@@ -50,7 +50,7 @@ var init = function (window) {
         */
         function update() {
             // TODO 4 : Update the circle's position //
-
+            physikz.updatePosition( /* Your Bracket Notation HERE */ );
             
             // TODO 5 / 10 : Call game.checkCirclePosition() on your circles.
 
