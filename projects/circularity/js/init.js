@@ -34,7 +34,7 @@ var init = function (window) {
 
         // TODO 3 / 7 : Call the drawCircle() function 
     
-        for(var i = 0; i < 100; i++) {
+        for(var i = 0; i < 5000; i++) {
         drawCircle();
         // drawCircle();
         // drawCircle();
@@ -70,7 +70,7 @@ var init = function (window) {
             // game.checkCirclePosition(circles[4]);
             }
             // TODO 9 : Iterate over the array
-           
+        }
             
         
     
