@@ -26,7 +26,7 @@ var background = function (window) {
         var background;
         
         // ANIMATION VARIABLES HERE:
-        
+        var tree;
      
         // called at the start of game and whenever the page is resized
         // add objects for display in background. draws each image added to the background once
@@ -60,7 +60,10 @@ var background = function (window) {
             
             
             // TODO 4: Part 1 - Add a tree
-            
+            tree = draw.bitmap("img/tree.png");
+            tree.x = 700;
+            tree.y = 400;
+            background.addChild(tree);
             
         } // end of render function - DO NOT DELETE
         
